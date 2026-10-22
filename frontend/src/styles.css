@@ -1,0 +1,22 @@
+:root{--ink:#18302d;--paper:#f4f7f5;--card:#fff;--line:#d5dfdb;--teal:#0b6e63;--red:#b3261e;--amber:#8a5a00;--mut:#5d7471}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.5 "Source Sans 3",system-ui,sans-serif}
+main{max-width:1000px;margin:0 auto;padding:16px}header{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between;align-items:center}
+h1{font-size:1.6rem;margin:.3em 0}h2{font-size:1.15rem}h3{font-size:1rem;margin:20px 0 6px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}@media(max-width:720px){.grid{grid-template-columns:1fr}}
+section{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:16px;min-width:0}
+button,select,input{font:inherit;color:inherit}button{border:1px solid var(--teal);background:#fff;color:var(--teal);border-radius:4px;padding:6px 12px;cursor:pointer;min-height:36px}
+button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #66b2a8;outline-offset:1px}
+button.primary{background:var(--teal);color:#fff;width:100%;margin-top:14px;min-height:44px;font-weight:600}button:disabled{opacity:.5;cursor:not-allowed}
+button.link{border:0;background:none;text-decoration:underline;padding:0 4px;color:var(--mut)}
+input,select{border:1px solid var(--line);border-radius:4px;padding:6px 8px;min-height:36px}
+.list,.chips{list-style:none;padding:0;margin:0}.list li{display:flex;gap:10px;align-items:center;padding:10px 0;border-bottom:1px solid var(--line)}
+.list li>div{flex:1;display:flex;flex-direction:column}.muted{color:var(--mut);font-size:.9rem}.price{font-variant-numeric:tabular-nums}
+.line{border-bottom:1px solid var(--line);padding:10px 0}.row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.row strong{flex:1;min-width:140px}
+.row>input[aria-label="Coupon code"]{flex:1;min-width:0}.qty{display:flex;gap:4px}.qty input{width:52px;text-align:center}.qty button{padding:6px 10px}
+dl{margin:6px 0 0}dl div{display:flex;justify-content:space-between;font-variant-numeric:tabular-nums}dt,dd{margin:0}.disc{color:var(--teal)}.strong{font-weight:600;border-top:1px dotted var(--line);margin-top:2px}
+.chips li{margin-top:8px;display:flex;flex-wrap:wrap;gap:4px 10px;align-items:center}.chip{display:inline-flex;align-items:center;gap:4px;border:1px solid var(--teal);border-radius:99px;padding:2px 4px 2px 12px;font-weight:600}
+.chip button{border:0;min-height:28px;padding:0 8px;border-radius:99px}.rej .chip{border-color:var(--red);color:var(--red);text-decoration:line-through}.rej .chip button{color:var(--red)}
+.rt{color:var(--red);font-size:.92rem;flex-basis:100%}.okt{color:var(--teal);font-size:.92rem}
+.totals{margin-top:16px;border-top:2px solid var(--ink);padding-top:8px;font-variant-numeric:tabular-nums}.totals>div{display:flex;justify-content:space-between}
+.totals.busy{opacity:.55}.grand{font-size:1.25rem;font-weight:700;margin-top:4px}
+.ok,.bad,.warn{padding:10px 12px;border-radius:4px;margin:10px 0}.ok{background:#e2f3ee;border:1px solid var(--teal)}.bad{background:#fdecea;border:1px solid var(--red);color:var(--red)}.warn{background:#fff4dc;border:1px solid var(--amber);margin-top:14px}

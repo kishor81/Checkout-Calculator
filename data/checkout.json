@@ -1,0 +1,490 @@
+{
+  "_readme": "Fictional data. Money is in Thai baht (THB), sent as decimal strings. Coupon dates are calendar days in Asia/Bangkok (UTC+07:00); endsOn is inclusive.",
+  "services": [
+    {
+      "id": "S1",
+      "title": "Thyroid Function Test",
+      "type": "lab_test",
+      "providerId": 48,
+      "providerName": "Riverside International Hospital",
+      "price": "1200.00"
+    },
+    {
+      "id": "S2",
+      "title": "Executive Health Check",
+      "type": "package",
+      "providerId": 48,
+      "providerName": "Riverside International Hospital",
+      "price": "3450.50"
+    },
+    {
+      "id": "S3",
+      "title": "Signature Facial (60 min)",
+      "type": "wellness",
+      "providerId": 61,
+      "providerName": "Lotus Day Spa",
+      "price": "1800.00"
+    },
+    {
+      "id": "S4",
+      "title": "Vitamin D Test",
+      "type": "lab_test",
+      "providerId": 104,
+      "providerName": "Saffron Diagnostics",
+      "price": "333.33"
+    },
+    {
+      "id": "S5",
+      "title": "Urine Routine",
+      "type": "lab_test",
+      "providerId": 104,
+      "providerName": "Saffron Diagnostics",
+      "price": "99.99"
+    },
+    {
+      "id": "S6",
+      "title": "Teeth Cleaning",
+      "type": "service",
+      "providerId": 48,
+      "providerName": "Riverside International Hospital",
+      "price": "0.10"
+    }
+  ],
+  "customers": [
+    {
+      "id": "C1",
+      "name": "Anong",
+      "ordersCount": 0
+    },
+    {
+      "id": "C2",
+      "name": "Bishal",
+      "ordersCount": 3
+    },
+    {
+      "id": "C3",
+      "name": "Chaya",
+      "ordersCount": 0
+    }
+  ],
+  "coupons": [
+    {
+      "code": "WELCOME10",
+      "type": "percent",
+      "value": "10",
+      "maxDiscount": "300.00",
+      "minSpend": "1000.00",
+      "scope": {
+        "kind": "all"
+      },
+      "startsOn": "2026-01-01",
+      "endsOn": "2026-12-31",
+      "usageLimit": null,
+      "usedCount": 0,
+      "perCustomerLimit": null,
+      "usedBy": {},
+      "firstOrderOnly": true,
+      "stackable": false,
+      "status": "active"
+    },
+    {
+      "code": "LAB15",
+      "type": "percent",
+      "value": "15",
+      "maxDiscount": "500.00",
+      "minSpend": "1500.00",
+      "scope": {
+        "kind": "type",
+        "value": "lab_test"
+      },
+      "startsOn": "2026-01-01",
+      "endsOn": "2026-12-31",
+      "usageLimit": null,
+      "usedCount": 0,
+      "perCustomerLimit": null,
+      "usedBy": {},
+      "firstOrderOnly": false,
+      "stackable": false,
+      "status": "active"
+    },
+    {
+      "code": "RIVER200",
+      "type": "fixed",
+      "value": "200.00",
+      "maxDiscount": null,
+      "minSpend": "0.00",
+      "scope": {
+        "kind": "provider",
+        "value": 48
+      },
+      "startsOn": "2026-01-01",
+      "endsOn": "2026-12-31",
+      "usageLimit": null,
+      "usedCount": 0,
+      "perCustomerLimit": null,
+      "usedBy": {},
+      "firstOrderOnly": false,
+      "stackable": true,
+      "status": "active"
+    },
+    {
+      "code": "SPA50",
+      "type": "fixed",
+      "value": "50.00",
+      "maxDiscount": null,
+      "minSpend": "500.00",
+      "scope": {
+        "kind": "type",
+        "value": "wellness"
+      },
+      "startsOn": "2026-01-01",
+      "endsOn": "2026-12-31",
+      "usageLimit": null,
+      "usedCount": 0,
+      "perCustomerLimit": null,
+      "usedBy": {},
+      "firstOrderOnly": false,
+      "stackable": true,
+      "status": "active"
+    },
+    {
+      "code": "THIRD",
+      "type": "percent",
+      "value": "33.333",
+      "maxDiscount": null,
+      "minSpend": "0.00",
+      "scope": {
+        "kind": "all"
+      },
+      "startsOn": "2026-01-01",
+      "endsOn": "2026-12-31",
+      "usageLimit": null,
+      "usedCount": 0,
+      "perCustomerLimit": null,
+      "usedBy": {},
+      "firstOrderOnly": false,
+      "stackable": true,
+      "status": "active"
+    },
+    {
+      "code": "FLASH25",
+      "type": "percent",
+      "value": "25",
+      "maxDiscount": null,
+      "minSpend": "0.00",
+      "scope": {
+        "kind": "all"
+      },
+      "startsOn": "2026-10-01",
+      "endsOn": "2026-10-07",
+      "usageLimit": null,
+      "usedCount": 0,
+      "perCustomerLimit": null,
+      "usedBy": {},
+      "firstOrderOnly": false,
+      "stackable": false,
+      "status": "active"
+    },
+    {
+      "code": "LIMITED",
+      "type": "fixed",
+      "value": "100.00",
+      "maxDiscount": null,
+      "minSpend": "0.00",
+      "scope": {
+        "kind": "all"
+      },
+      "startsOn": "2026-01-01",
+      "endsOn": "2026-12-31",
+      "usageLimit": 50,
+      "usedCount": 50,
+      "perCustomerLimit": null,
+      "usedBy": {},
+      "firstOrderOnly": false,
+      "stackable": true,
+      "status": "active"
+    },
+    {
+      "code": "LASTONE",
+      "type": "fixed",
+      "value": "100.00",
+      "maxDiscount": null,
+      "minSpend": "0.00",
+      "scope": {
+        "kind": "all"
+      },
+      "startsOn": "2026-01-01",
+      "endsOn": "2026-12-31",
+      "usageLimit": 10,
+      "usedCount": 9,
+      "perCustomerLimit": null,
+      "usedBy": {},
+      "firstOrderOnly": false,
+      "stackable": true,
+      "status": "active"
+    },
+    {
+      "code": "ONCE",
+      "type": "fixed",
+      "value": "150.00",
+      "maxDiscount": null,
+      "minSpend": "0.00",
+      "scope": {
+        "kind": "all"
+      },
+      "startsOn": "2026-01-01",
+      "endsOn": "2026-12-31",
+      "usageLimit": null,
+      "usedCount": 0,
+      "perCustomerLimit": 1,
+      "usedBy": {
+        "C2": 1
+      },
+      "firstOrderOnly": false,
+      "stackable": true,
+      "status": "active"
+    },
+    {
+      "code": "OLDCODE",
+      "type": "fixed",
+      "value": "500.00",
+      "maxDiscount": null,
+      "minSpend": "0.00",
+      "scope": {
+        "kind": "all"
+      },
+      "startsOn": "2026-01-01",
+      "endsOn": "2026-12-31",
+      "usageLimit": null,
+      "usedCount": 0,
+      "perCustomerLimit": null,
+      "usedBy": {},
+      "firstOrderOnly": false,
+      "stackable": false,
+      "status": "inactive"
+    },
+    {
+      "code": "NEWYEAR",
+      "type": "percent",
+      "value": "20",
+      "maxDiscount": null,
+      "minSpend": "0.00",
+      "scope": {
+        "kind": "all"
+      },
+      "startsOn": "2027-01-01",
+      "endsOn": "2027-01-31",
+      "usageLimit": null,
+      "usedCount": 0,
+      "perCustomerLimit": null,
+      "usedBy": {},
+      "firstOrderOnly": false,
+      "stackable": false,
+      "status": "active"
+    },
+    {
+      "code": "BIGFIX",
+      "type": "fixed",
+      "value": "5000.00",
+      "maxDiscount": null,
+      "minSpend": "0.00",
+      "scope": {
+        "kind": "all"
+      },
+      "startsOn": "2026-01-01",
+      "endsOn": "2026-12-31",
+      "usageLimit": null,
+      "usedCount": 0,
+      "perCustomerLimit": null,
+      "usedBy": {},
+      "firstOrderOnly": false,
+      "stackable": true,
+      "status": "active"
+    }
+  ],
+  "examples": [
+    {
+      "request": {
+        "lines": [
+          {
+            "serviceId": "S1",
+            "quantity": 1
+          },
+          {
+            "serviceId": "S2",
+            "quantity": 1
+          }
+        ],
+        "couponCodes": [
+          "WELCOME10"
+        ],
+        "customerId": "C1",
+        "at": "2026-11-02T10:00:00+07:00"
+      },
+      "expected": {
+        "lines": [
+          {
+            "serviceId": "S1",
+            "quantity": 1,
+            "amount": "1200.00",
+            "discounts": {
+              "WELCOME10": "77.41"
+            },
+            "amountAfterDiscounts": "1122.59"
+          },
+          {
+            "serviceId": "S2",
+            "quantity": 1,
+            "amount": "3450.50",
+            "discounts": {
+              "WELCOME10": "222.59"
+            },
+            "amountAfterDiscounts": "3227.91"
+          }
+        ],
+        "coupons": [
+          {
+            "code": "WELCOME10",
+            "status": "applied",
+            "discount": "300.00"
+          }
+        ],
+        "subtotal": "4650.50",
+        "discountTotal": "300.00",
+        "netAmount": "4350.50",
+        "vat": "304.54",
+        "total": "4655.04"
+      }
+    },
+    {
+      "request": {
+        "lines": [
+          {
+            "serviceId": "S1",
+            "quantity": 1
+          },
+          {
+            "serviceId": "S4",
+            "quantity": 3
+          },
+          {
+            "serviceId": "S5",
+            "quantity": 2
+          }
+        ],
+        "couponCodes": [
+          " lab15 ",
+          "RIVER200"
+        ],
+        "customerId": "C2",
+        "at": "2026-11-02T10:00:00+07:00"
+      },
+      "expected": {
+        "lines": [
+          {
+            "serviceId": "S1",
+            "quantity": 1,
+            "amount": "1200.00",
+            "discounts": {
+              "LAB15": "180.00",
+              "RIVER200": "200.00"
+            },
+            "amountAfterDiscounts": "820.00"
+          },
+          {
+            "serviceId": "S4",
+            "quantity": 3,
+            "amount": "999.99",
+            "discounts": {
+              "LAB15": "150.00"
+            },
+            "amountAfterDiscounts": "849.99"
+          },
+          {
+            "serviceId": "S5",
+            "quantity": 2,
+            "amount": "199.98",
+            "discounts": {
+              "LAB15": "30.00"
+            },
+            "amountAfterDiscounts": "169.98"
+          }
+        ],
+        "coupons": [
+          {
+            "code": "LAB15",
+            "status": "applied",
+            "discount": "360.00"
+          },
+          {
+            "code": "RIVER200",
+            "status": "applied",
+            "discount": "200.00"
+          }
+        ],
+        "subtotal": "2399.97",
+        "discountTotal": "560.00",
+        "netAmount": "1839.97",
+        "vat": "128.80",
+        "total": "1968.77"
+      }
+    },
+    {
+      "request": {
+        "lines": [
+          {
+            "serviceId": "S3",
+            "quantity": 1
+          },
+          {
+            "serviceId": "S6",
+            "quantity": 1
+          }
+        ],
+        "couponCodes": [
+          "SPA50",
+          "FLASH25"
+        ],
+        "customerId": null,
+        "at": "2026-11-02T10:00:00+07:00"
+      },
+      "expected": {
+        "lines": [
+          {
+            "serviceId": "S3",
+            "quantity": 1,
+            "amount": "1800.00",
+            "discounts": {
+              "SPA50": "50.00"
+            },
+            "amountAfterDiscounts": "1750.00"
+          },
+          {
+            "serviceId": "S6",
+            "quantity": 1,
+            "amount": "0.10",
+            "discounts": {},
+            "amountAfterDiscounts": "0.10"
+          }
+        ],
+        "coupons": [
+          {
+            "code": "SPA50",
+            "status": "applied",
+            "discount": "50.00"
+          },
+          {
+            "code": "FLASH25",
+            "status": "rejected",
+            "reason": "This code expired on 2026-10-07."
+          }
+        ],
+        "subtotal": "1800.10",
+        "discountTotal": "50.00",
+        "netAmount": "1750.10",
+        "vat": "122.51",
+        "total": "1872.61"
+      }
+    }
+  ]
+}
